@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             text-decoration: none;
+            font-family: arial;
         }
         #cabecalho{
 
@@ -24,19 +25,44 @@
         }
 
         #menu{
+            margin-left: 2%;
+            float: left;
+            color: white;
+            max-height: 30px;
+        }
+
+        nav li{
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+
+        #logo{
             float: right;
+        }
+
+        a{
             color: white;
         }
+
+        a:hover{
+            color: yellow;
+        }
     </style>
-    <title>Lucas Dev</title>
+    <title>CODEX SOFTWARE HOUSE</title>
 </head>
 <body>
    <header>
     <div id='cabecalho'>
         <div id="menu">
+            <nav>
             <ul>
-                <li></li>
+                <li><a href="#">HOME </a>| </li>
+                <li><a href="#">SOBRE NÓS </a>|</li>
+                <li><a href="#">ORÇAMENTO </a>|</li>
+                <li><a href="#">CONTATO</a></li>
             </ul>
+            </nav>
         </div>
        <div id='logo'><img src="img/logo.png"></div>
        </div>
