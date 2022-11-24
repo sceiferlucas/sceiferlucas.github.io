@@ -23,7 +23,7 @@ h1{
 #corpo{
 	background-color: white;
 	max-width: 900px;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	margin: auto;
 	height: 600px;
 	display: flex;
@@ -37,7 +37,7 @@ h1{
 	align-items: center;
 	width: 250px;
 	height:600px;
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 }
 
 #logo img{
@@ -53,14 +53,14 @@ h1{
 	align-items: center;
 	height: 50%;
 	margin: auto;
-	border: 1px solid green;
+/*	border: 1px solid green;*/
 }
 
 #menu{
 	padding-top: 21%;
 	text-align: center;
 	height: 50%;
-	border: 1px solid blue;
+/*	border: 1px solid blue;*/
 }
 
 #menu a{
