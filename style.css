@@ -190,9 +190,31 @@ form input{
 	color: black;
 }
 
-.texto{
-	
+@keyframes animacao{
+	from{margin-left: -250px; color: #F7F7F7}
+		to{margin-left: 190px; color: black}
 }
+
+.texto{
+	font-family: 'Rubik', sans-serif;
+	color: black;
+	margin-top: 100px;
+	position: absolute;
+	width: 250px;
+/*	border: 1px solid black;*/
+	font-size: 20px;
+	margin-left: 190px;
+	animation-name: animacao;
+	animation-duration: 2s;
+}
+
+
+
+/*.texto:hover{
+	color: black;
+	transform: translateX(10px);
+	transition: 4s;
+}*/
 
 /*responsividade*/
 
@@ -272,5 +294,16 @@ form input{
 	max-width: 95%;
 	margin: auto;
 	margin-bottom: 15px;
+}
+
+@keyframes animacao{
+	from{margin-left: -250px; color: #F7F7F7}
+		to{margin-left: 40px; color: black}
+}
+
+.texto{
+	margin-left: 40px;
+	margin-top: 40px;
+	font-size: 16px;
 }
 }
