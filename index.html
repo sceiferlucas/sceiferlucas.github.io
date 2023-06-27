@@ -1,74 +1,471 @@
 <!DOCTYPE html>
-<html>
+<html lang="PT-BR">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Evillyn Semi-Joias</title>
+
+     <title>PlanetFit - Academia</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+
 </head>
-<body>
-	<header>
-		<nav>
-			<form>
-				<input type="search" name="busca" placeholder="    BUSQUE AQUI: " style="font-family: arial; ">
-			</form>
-		</nav>
-		<div id="cabecalho">
-			<div id="logo">
-				<img src="media/app/logo.fw.png">
-			</div>
-		</div>
-		<div id="menus">
-			<a href="#"><span class="amarelinho">HOME</span></a><a href="#"> CATÁLOGO</a> <a href="#">CONTATO</a>
-		</div>
-		
-	</header>
-	
-	<div id="banner">
-		<div class="texto" >
-			ALGUM TEXTO AQUI...
-		</div>
-		<div id="primeiroBotao">
-			<a href="#"><button><b>VER MAIS</b></button></a>
-		</div>
-		<img src="media/app/slider1_1.jpg">
-		
-	</div><br>
-	<div class="bannerMenor">
-		<div class="foto">
-			fotos
-		</div>
-		<div class="foto">
-			fotos
-		</div>
-		<div class="foto">
-			fotos
-		</div>
-	</div>
-	<div id="submenu">
-		<div style="border:2px solid #fabe82;
-		border-right:1px solid #fabe82;" class="menuOpt">
-		     Em Promoção
-		</div>
-		<div class="menuOpt">
-			Mais Vendidos
-		</div>
-		<div class="menuOpt">
-			Novidades
-		</div>
-	</div>
-	<div id="banner">
-		<div class="texto">
-			OUTRO TEXTO AQUI...
-		</div>
-		<div id="segundoBotao">
-			<a href="#"><button><b>COMPRAR AGORA</b></button></a>
-		</div>
-		<img src="media/app/slider1_2.jpg">
-	</div>
-	<footer style="height: 260px;">
-		rodapé
-		
-	</footer>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            
+            <a class="navbar-brand" href="index.html"><img src="images/logo.fw.png" style="height:50px;"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link smoothScroll">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">Sobre Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#class" class="nav-link smoothScroll">Treinos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link smoothScroll">Horários</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contato</a>
+                    </li>
+                </ul>
+
+                <ul class="social-icon ml-lg-3">
+                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+            <div class="bg-overlay"></div>
+
+               <div class="container">
+                    <div class="row">
+
+                         <div class="col-lg-8 col-md-10 mx-auto col-12">
+                              <div class="hero-text mt-5 text-center">
+
+                                    <h6 data-aos="fade-up" data-aos-delay="300">Uma nova maneira de construir um estilo de vida saudável!</h6>
+
+                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Fortaleça seu corpo na Planet Fit</h1>
+
+                                    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Começar</a>
+
+                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">Saber Mais</a>
+                                   
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <section class="feature" id="feature">
+        <div class="container">
+            <div class="row">
+
+                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-3 text-white" data-aos="fade-up">Novo na PlanetFit?</h2>
+
+                    <h6 class="mb-4 text-white" data-aos="fade-up">Na assinatura anual você ganha 2 meses gratis! (99 / MÊS).</h6>
+
+                    <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm">Me tornar membro hoje</a>
+                </div>
+
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+                     <div class="about-working-hours">
+                          <div>
+
+                                <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Horario de Funcionamento</h2>
+
+                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Segunda - Sexta</strong>
+
+                               <p data-aos="fade-up" data-aos-delay="800">6:20 AM - 00:00 PM</p>
+
+                               <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Sabados</strong>
+
+                                <p data-aos="fade-up" data-aos-delay="800">10:00 AM - 14:00 PM</p>
+
+                                <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Feriados</strong>
+
+                                <p data-aos="fade-up" data-aos-delay="800">9:00 AM - 13:00 PM</p>
+
+                                
+                               </div>
+                          </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+     <!-- ABOUT -->
+     <section class="about section" id="about">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Olá, nós somos a PlanetFit</h2>
+
+                                <p data-aos="fade-up" data-aos-delay="400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                <p data-aos="fade-up" data-aos-delay="500">It is a long established fact that a reader <a rel="nofollow" href="#" target="_parent">PlanetFit</a>, you can <a rel="nofollow" href="#" target="_parent">contact</a> immediately. Thank you.</p>
+
+                            </div>
+
+                            <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+                                <div class="team-thumb">
+                                    <img src="images/team/team-image.jpg" class="img-fluid" alt="Trainer">
+
+                                    <div class="team-info d-flex flex-column">
+
+                                        <h3>Maria Silva</h3>
+                                        <span>Instrutora de Yoga</span>
+
+                                        <ul class="social-icon mt-3">
+                                            <li><a href="#" class="fa fa-twitter"></a></li>
+                                            <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
+                                <div class="team-thumb">
+                                    <img src="images/team/team-image01.jpg" class="img-fluid" alt="Trainer">
+
+                                    <div class="team-info d-flex flex-column">
+
+                                        <h3>Catarina</h3>
+                                        <span>Personal Trainer</span>
+
+                                        <ul class="social-icon mt-3">
+                                            <li><a href="#" class="fa fa-instagram"></a></li>
+                                            <li><a href="#" class="fa fa-facebook"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- CLASS -->
+     <section class="class section" id="class">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="col-lg-12 col-12 text-center mb-5">
+                                <h6 data-aos="fade-up">Consiga o corpo perfeito</h6>
+
+                                <h2 data-aos="fade-up" data-aos-delay="200">Nossas turmas de Treino</h2>
+                             </div>
+
+                            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                                <div class="class-thumb">
+                                    <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Yoga</h3>
+
+                                        <span><strong>Ministrado por</strong> - Maria</span>
+
+                                        <span class="class-price">R$50</span>
+
+                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                                <div class="class-thumb">
+                                    <img src="images/class/crossfit-class.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Areobico</h3>
+
+                                        <span><strong>Ministrado por</strong> - Julia</span>
+
+                                        <span class="class-price">R$66</span>
+
+                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="class-thumb">
+                                    <img src="images/class/cardio-class.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Cardio</h3>
+
+                                        <span><strong>Ministrado por</strong> - Catarina</span>
+
+                                        <span class="class-price">R$75</span>
+
+                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- SCHEDULE -->
+     <section class="schedule section" id="schedule">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="col-lg-12 col-12 text-center">
+                                <h6 data-aos="fade-up">Agenda Semanal</h6>
+
+                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Horário de Treinos</h2>
+                             </div>
+
+                             <div class="col-lg-12 py-5 col-md-12 col-12">
+                                 <table class="table table-bordered table-responsive schedule-table" data-aos="fade-up" data-aos-delay="300">
+
+                                     <thead class="thead-light">
+                                         <th><i class="fa fa-calendar"></i></th>
+                                         <th>Seg</th>
+                                         <th>Ter</th>
+                                         <th>Qua</th>
+                                         <th>Qui</th>
+                                         <th>Sex</th>
+                                         <th>Sab</th>
+                                     </thead>
+
+                                     <tbody>
+                                         <tr>
+                                            <td><small>7:00 am</small></td>
+                                            <td>
+                                                <strong>Cardio</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                            <td>
+                                                <strong>Planet Fitness</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Yoga</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>9:00 am</small></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Boxing</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                            <td>
+                                                <strong>Areobico</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Cardio</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>11:00 am</small></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Boxing</strong>
+                                                <span>11:00 am - 2:00 pm</span>
+                                            </td>
+                                            <td>
+                                                <strong>Areobico</strong>
+                                                <span>11:30 am - 3:30 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Body building</strong>
+                                                <span>11:50 am - 5:20 pm</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>14:00 pm</small></td>
+                                            <td>
+                                                <strong>Boxing</strong>
+                                                <span>14:00 pm - 16:00 pm</span>
+                                            </td>
+                                            <td>
+                                                <strong>Planet lifting</strong>
+                                                <span>15:00 pm - 18:00 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Cardio</strong>
+                                                <span>18:00 pm - 21:00 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Crossfit</strong>
+                                                <span>17:00 pm - 19:00 pm</span>
+                                            </td>
+                                         </tr>
+                                     </tbody>
+                                 </table>
+                             </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- CONTACT -->
+     <section class="contact section" id="contact">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Fique a vontade para perguntar qualquer coisa</h2>
+
+                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                            <input type="text" class="form-control" name="cf-name" placeholder="Name">
+
+                            <input type="email" class="form-control" name="cf-email" placeholder="Email">
+
+                            <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+
+                            <button type="submit" class="form-control" id="submit-button" name="submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
+
+                    <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Onde você pode nos <span>encontrar</span></h2>
+
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>  Av. Dep. Borsari Neto, 178 - Jardim Independencia, Sarandi - PR, 87113-300</p>
+
+                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.612540061625!2d-51.874620924539485!3d-23.438359657085144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecdaa072d54e89%3A0xb435a671d1d2fce6!2sAv.%20Dep.%20Borsari%20Neto%2C%20178%20-%20Jardim%20Independencia%2C%20Sarandi%20-%20PR%2C%2087113-300!5e0!3m2!1spt-BR!2sbr!4v1687872619999!5m2!1spt-BR!2sbr" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- FOOTER -->
+     <footer class="site-footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-4 col-md-5">
+                        <p class="copyright-text"> PlanetFit 2023&copy; . Todos os Direitos Reservados.
+                        
+                        <br>Design: <a href="#">Lucas Silva</a></p>
+                    </div>
+
+                    <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                        <p class="mr-4">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="#">email@email.com</a>
+                        </p>
+
+                        <p><i class="fa fa-phone mr-1"></i>44 9999-9999</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h2 class="modal-title" id="membershipFormLabel">Cadastro de Membro</h2>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form class="membership-form webform" role="form">
+                <input type="text" class="form-control" name="cf-name" placeholder="Seu Nome">
+
+                <input type="email" class="form-control" name="cf-email" placeholder="Seu Email">
+
+                <input type="tel" class="form-control" name="cf-phone" placeholder="Seu Telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                <textarea class="form-control" rows="3" name="cf-message" placeholder="Mensagem adicional"></textarea>
+
+                <button type="submit" class="form-control" id="submit-button" name="submit">Enviar</button>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="signup-agree">
+                    <label class="custom-control-label text-small text-muted" for="signup-agree">Eu aceito os <a href="#">Termos &amp; Condições</a>
+                    </label>
+                </div>
+            </form>
+          </div>
+
+          <div class="modal-footer"></div>
+
+        </div>
+      </div>
+    </div>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
 </body>
 </html>
