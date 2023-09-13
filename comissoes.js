@@ -18,19 +18,19 @@
 		if (porce>=1000 && porce<1500){
 			// alert("Voce recebe 25%: " + (porce/100)*25+' R$');
 			result = document.getElementById('resultado');
-			result.innerHTML = "Voce recebe 25%: " + (porce/100)*25+' R$';
+			result.innerHTML = "Você recebe 25%: " + (porce/100)*25+' R$';
 			
 		}
 		if (porce>=1500 && porce<4000){
 			// alert("Voce recebe 36%: " + (porce/100)*36+' R$');
 			result = document.getElementById('resultado');
-			result.innerHTML = "Voce recebe 36%: " + (porce/100)*36+' R$';
+			result.innerHTML = "Você recebe 36%: " + (porce/100)*36+' R$';
 			
 		}
 			if (porce>=4000 && porce<10000){
 			// alert("Voce recebe 42%: " + (porce/100)*42+' R$');
 			result = document.getElementById('resultado');
-			result.innerHTML = "Voce recebe 42%: " + (porce/100)*42+' R$';
+			result.innerHTML = "Você recebe 42%: " + (porce/100)*42+' R$';
 			
 		}
 		if (porce>=10000){
