@@ -204,13 +204,13 @@ h1, p, button{
 	background-color: #E4E3E3;
 }
 
-.container{
+.caixa{
 /*	float: left;*/
 /*	border: 1px solid red;*/
 	width: 50%;
 	height: 600px;
 }
 
-.container img{
+.caixa img{
 	height: 100%;
 }
