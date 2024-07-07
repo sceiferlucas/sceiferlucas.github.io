@@ -4,6 +4,10 @@
 	text-decoration: none;
 }
 
+body{
+	max-width: 100%;
+}
+
 .jumbotron img{
 	height: 200px;
 /*	border: 1px solid black;*/
@@ -37,6 +41,10 @@
 .navbar-default .navbar-nav li a:hover{
 	text-decoration: underline;
 	color: white;
+}
+
+.navbar-brand img{
+	height: 30px;
 }
 
 .container{
@@ -76,12 +84,29 @@
 	margin: auto;
 /*	border: 1px solid red;*/
 	width: 80%;
+	max-width: 80%;
 	margin-bottom: 30px;
 	max-width: 80%;
 }
 
+.main .fundo-preto{
+	max-width: 80%;
+}
+
+.main .fundo-preto img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 footer{
-	background-color: grey;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	background: rgb(150,147,147);
+	background: linear-gradient(180deg, rgba(150,147,147,1) 0%, rgba(0,0,0,1) 100%);
 	height: 400px;
 }
 
@@ -107,6 +132,11 @@ footer{
 	background-color: black;
 }
 
+.fundo-rgb{
+	background: rgb(217,0,0);
+	background: linear-gradient(90deg, rgba(217,0,0,1) 42%, rgba(0,0,0,1) 100%);
+}
+
 .main .fundo-preto{
 	margin: auto;
 }
@@ -126,4 +156,35 @@ footer{
 
 .texto-centralizado{
 	text-align: center;
+}
+
+#sub-footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 100%;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,0,0,1) 100%);
+	bottom: 0;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+.box-footer{
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+/*	border:1px solid yellow;*/
+	height: 70%;
+}
+
+.box-box{
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	min-width: 300px;
+/*	border: 1px solid red;*/
+	height: 100%;
 }
