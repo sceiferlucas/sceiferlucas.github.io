@@ -2,189 +2,86 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+	color: white;
 }
 
-body{
-	max-width: 100%;
+#principal{
+	width: 100%;
+/*	height: 100vh;*/
+	display: flex;
+	flex-direction: row;
+	 background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(50,50,80,1) 100%); 
 }
 
-.jumbotron img{
-	height: 200px;
-/*	border: 1px solid black;*/
-	margin-top: 20px;
+#div-esquerda{
+	position: fixed;
+/*	background-color: white;*/
+}
+
+#div-direita{
+	width: 100%;
+/*	background-color: grey;*/
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.meia-div{
+	width: 50%;
+	border: 1px solid black;
+	height: 100vh;
+}
+
+#titulo{
+	text-align: left;
+}
+
+#titulo h1{
+	font-size: 70px;
+	font-family: arial;
+}
+
+#titulo p{
+	font-size: 25px;
+}
+
+#social{
+	flex-direction: row;
+}
+
+#navegacao{
+	text-align: left;
+}
+
+.blocos{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 33.3%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.sub-div{
+	width: 50%;
+	min-height: 100vh;
+	padding: 150px;
+	padding-top: 95px;
+	text-align: left;
+}
+
+.sub-div p{
+	font-size: 20px;
+}
+
+.bloco-exp, .bloco-proj{
+	width: 100%;
+	border-radius: 10px;
+	background-color: red;
+	min-height: 200px;
 	margin-bottom: 20px;
 }
 
-.jumbotron{
-	background: rgb(0,0,0);
-	background: linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,0,0,1) 100%);
-	/*background: rgb(0,0,0);
-	background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(121,9,9,1) 100%);*/
-	padding: 0;
-}
-
-.navbar-default{
-	margin: 0;
-	padding: 0;
-	border: none;
-	border-radius: 0;
-	background-color: black;
-	color: white;
-	font-weight: bold;
-	margin-bottom: 30px;
-}
-
-.navbar-default .navbar-nav li a{
-	color: white;
-}
-
-.navbar-default .navbar-nav li a:hover{
-	text-decoration: underline;
-	color: white;
-}
-
-.navbar-brand img{
-	height: 30px;
-}
-
-.container{
-	border-radius: 5px;
-	margin-left: 0;
-	width: 60%;
-	height: 500px;
-	overflow: hidden;
-	position: relative;
-}
-
-.container img{
-	border-radius: 12px;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-	display: block;
-	position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-/*    transition: opacity 2s ease-in-out;*/
-	transition: 1s;
-    transform: scale(1); /* Estado inicial sem zoom */
-}
-
-.container img.active{
-	opacity: 1;
-	transition: 1s;
-	transform: scale(1.1); /* Efeito de zoom */
-}
-
-.main{
-	display: flex;
-	margin: auto;
-/*	border: 1px solid red;*/
-	width: 80%;
-	max-width: 80%;
-	margin-bottom: 30px;
-	max-width: 80%;
-}
-
-.main .fundo-preto{
-	max-width: 80%;
-}
-
-.main .fundo-preto img{
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-footer{
-	width: 100%;
-	color: white;
-	text-align: center;
-	font-size: 50px;
-	font-weight: bold;
-	background: rgb(150,147,147);
-	background: linear-gradient(180deg, rgba(150,147,147,1) 0%, rgba(0,0,0,1) 100%);
-	height: 400px;
-}
-
-#sub-menu{
-	display:flex;
-	justify-content: space-between;
-	width: 100%;
-}
-
-.link{
-	padding-top: 23px;
-/*	border: 1px solid black;*/
-	width: 33%;
-/*	background-color: red;*/
-	height: 50px;
-}
-
-.sombra{
-	box-shadow: 2px 2px 2px 2px grey;
-}
-
-.fundo-preto{
-	background-color: black;
-}
-
-.fundo-rgb{
-	background: rgb(217,0,0);
-	background: linear-gradient(90deg, rgba(217,0,0,1) 42%, rgba(0,0,0,1) 100%);
-}
-
-.main .fundo-preto{
-	margin: auto;
-}
-
-.video{
-	width: auto;
-}
-
-.news{
-	width: 100%;
-/*	border: 1px solid green;*/
-}
-
-.news .link{
-	width: 100%;
-}
-
-.texto-centralizado{
-	text-align: center;
-}
-
-#sub-footer{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 60px;
-	width: 100%;
-	background: rgb(0,0,0);
-	background: linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,0,0,1) 100%);
-	bottom: 0;
-	text-align: center;
-	color: white;
-	font-weight: bold;
-}
-
-.box-footer{
-	max-width: 100%;
-	display: flex;
-	justify-content: space-between;
-/*	border:1px solid yellow;*/
-	height: 70%;
-}
-
-.box-box{
-	font-weight: bold;
-	color: white;
-	text-align: center;
-	min-width: 300px;
-/*	border: 1px solid red;*/
-	height: 100%;
-}
