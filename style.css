@@ -460,7 +460,6 @@ min-height: 750px;
 }
 .main-footer{
     min-height: 300px;
-    width: 100%;
     justify-content: center;
     flex-direction: column-reverse;
     margin-top: 10px;
