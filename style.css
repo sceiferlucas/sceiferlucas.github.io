@@ -1,487 +1,372 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: arial;
+		}
 
-}
-body{
-    max-width: 100vw;
-}
+		a{
+			text-decoration: none;
+			color: black;
+		}
 
+		.mae{
+			display: flex;
+			flex-direction: row;
+			min-height: 500px;
+			max-width: 98%;
+			margin: auto;
+			background-color: lightgrey;
+/*			max-width: 100vw;*/
+			justify-content: space-around;
+			overflow-y:auto ;
+		}
 
-#navegacao{
-    width: 100%;
-    height: 120px; 
-    display:flex;
-    justify-content: space-between;
-    background-color: #E0E1DD;
-    position: fixed;
-    z-index: 2;
-    
+		.alinhamento-chave{
+			justify-content: space-between;
+		}
 
-}
+		.chave{
+			display: flex;
+			flex-direction: row;
+/*			width: 200px;*/
+			height: 60px;
+			background-color:grey;
+			margin: 2px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 
-#RG{
-    letter-spacing: 2px;
-    color: black;
-    height: 100%;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+		.chave img{
+			height: 100%;
+		}
 
-#RG img{
-    margin-right: 20px;
-}
+		.chave p{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 
-#opcao{
-    margin-right:90px ;
-    width: 500px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+		.chave a{
+			height: 100%;
+/*			width: 50%;*/
+/*			display: block;*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-}
-.links-nave{
-    color: black;
-    font-size:20px;
-    font-weight:bold;
-}
-.links-nave a:hover{
-    color: royalblue;
-}
+		.main{
+			margin: 5px;
+			background-color: whitesmoke;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			transform: scale(0.8);
+			transform-origin: center;
+			}
 
+		.main h1, h2, h3{
+			display: flex;
+			justify-content: center;
+			background-color:  #527fff;
+			color: black;
+			font-size: 30px;
+		}
 
-.links-nave a{
-   color: rgb(0, 0, 0); 
-    font-size: 20px;
-    font-weight: bold;
-}
-body{
-    display: flex;
-    flex-direction: column;
-}
-#banner{
-    background-color: #f3f3f3;
-    position: relative; 
-    letter-spacing: 2px;
-    width: 100%;
-    min-height: 910px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-     margin-bottom: 30px; 
-     margin-top: 30px;
-    
-}
-.projetos{
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-  
-}
-.projeto-git{
-    letter-spacing: 1px;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: #0077B6;
-    color: #E9ECEF;
-    border: none;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+		header{
+			height: 100px;
+			background-color: black;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-}
-.projeto-git:hover{
-    margin-top: -10px;
-    transition: 0.5s;  
+		#body{
+			display: flex;
+			justify-content: center;
+		}
 
-}
+		#form{
+			background-color: grey;
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 300px;
+			border: 1px solid black;
+		}
 
-.meunome{
-    font: italic small-caps bold 16px/2 cursive;
-    font-weight: bold;
-    font-size: 25px;
-    letter-spacing: 3px;
-}
-.navegacao-esquerda{
-    position: absolute;
-    top: 45%;
-    background: #E9ECEF;
-    box-shadow: rgba(23, 23, 48, 0.2) 0px 7px 29px 0px;
-    padding: .5rem;
-    
-}
-.opcao-esquerda{
-    width: 50px;
-    height: 300px;
-    display: flex;  
-    flex-direction: column;
-    justify-content: space-between; 
-}
-.links img{
-    column-fill: auto;
-    width: 50px;
-    min-height: 50px;
+		.form{
+			background-color: grey;
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 300px;
+			border: 1px solid black;
+			padding: 30px;
+		}
 
-}
+		.form input, select{
+			margin: 20px;
+			width: 80%;
+			height: 40px;
+		}
 
-.links img:hover{
-    background-color: rgb(236, 143, 143);
-    transition: 1s;
-    
-}
-h3{
-    font-size: 20px;
-}
-.formulario{
-    
-    align-content: right;
-    padding: 30px;
-    background-color: white;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 10px 5px 60px 2px gray;
-    min-height: 480px; 
-    
-}
-form{
-    width: 100%;
+		.form h3{
+			margin: 10px;
+		}
 
-}
-input,textarea:focus{
-    outline: 0;
-}
-input,
-textarea{
-    border-radius: 5px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: 40px;
-    border: none;
-    background-color: rgb(224, 224, 224);
-    
-}
-textarea{
-    min-height: 200px;
+		form{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
 
-}
-label{
-    text-align: left;
-    margin-bottom: 5px;
+	 	form input, select textarea{
+	 		height: 40px;
+	 		margin: 10px;
+	 		min-width: 80%;
+	 	}
 
-}
-.botao-enviar{
-    width:30%; 
-    height: 40px;
-    float: right;
-    color:white;
-    background-color: #0077B6;
-    border: none;
-    border-radius: 5px;
+	 	#mostrar-torneios{
+	 		width: 80%;
+	 		margin: auto;
+	 		min-height: 400px;
+	 		background-color: grey;
+	 		display: flex;
+	 		justify-content: space-around;
+	 		align-items: center;
+	 	}
 
-}
-.visu-botao{
-    width: 100%;
-    float: right;
-   display: block;
-}
-.botao-enviar:hover{
-    margin-top: -5px;
-    transition: 0.5s;
+	 	#mostrar-torneios a{
+	 		display: block;
+	 		width: 33%;
+	 	}
 
-}
-#comecodetudo{
-    display: flex;
-    flex-direction: column; 
-    width: 30%;
-    text-align: start;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-family: "Edu AU VIC WA NT Hand", cursive;
-    
+	 	.torneio{
+	 		width: 100%;
+	 		height: 200px;
+	 		background-color: white;
+/*	 		display: flex;*/
+	 		text-align: center;
+	 	}
 
-}
-.comecoesquerda{  
-    font-weight: 100;
-    font-style: normal;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: space-evenly;
-    align-content: space-between;
+	 	.torneio img{
+	 		width: 100%;
+	 		height: 150px;
+	 	}
 
-    
-}
-#minhaskils{
-    min-width: 30%;
-    max-width: 30%;
-    flex-direction: column;
-    display: flex; 
+	 	#principal{
+	 		width: 70%;
+	 		margin: auto;
+	 		min-height: 300px;
+	 		background-color: grey;
+	 		display: flex;
+	 		flex-direction: column;
+	 		align-content: center;
+	 		align-items: center;
+	 		padding: 30px;
+	 	}
 
-}
-#habilidades{
-    min-width: 100px;
-    height: 60px;
-    letter-spacing: 1px;
-    border: 1px solid rgb(223, 222, 222);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color:#e7e8e9;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    float: left;
-    margin: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    justify-content: center;
+	 	.descricao{
+	 		width: 80%;
+	 		margin: auto;
+/*	 		background-color: black;*/
+	 		padding: 30px;
+	 	}
 
-}
-.titulo{
-text-align: start;
-width: 100%;
-height: 50px;
-margin:0;
-}
-.visu-habilidade{
-    max-width: 100%;
-    justify-content: space-evenly;
+	 	.descricao h1, p{
+	 		text-align: center;
+	 	}
 
-}
-h3{
-    font-weight: bold;
-    font-size: 30px;
-    margin:10px;
-    margin-left: 0;
-}
-#meus-projetos{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
-}
-.projeto-img{
-    width: 30%;
-    height:100%;
-}
-.projeto-resumo{
-    width: 30%;
-    height: 100%;
-    text-align: start;
+	 	#principal a{
+	 		padding: 20px;
+	 		width: 150px;
+	 		height: 40px;
+	 		background-color:green;
+	 		color: white;
+	 		margin-top: 30px;
+	 		display: flex;
+	 		justify-content: center;
+	 		align-items: center;
+	 	}
 
-    
-}
-.projeto-resumo p{
-    display: block;
-    padding: 10px;
-    padding-left: 0;
-    font-family: "Edu AU VIC WA NT Hand", cursive;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    font-size: 16px;
+	 	#menu{
+	 		min-height: 60px;
+	 		background-color: grey;
+	 		margin-bottom: 30px;
+	 		display: flex;
+	 		justify-content: space-around;
+	 		align-items: center;
+	 	}
 
-}
-.projeto-detalhes{
-    display: block;
-    width: 50%;
-    height: 60px;
-    font-size: 18px;
-    background-color: #0077B6;
-    border: none;
-    border-radius: 6px;
-    color:white;
-    font-weight: bold;
-}
-.projeto-detalhes:hover{
-    transition: 0.5s;
-    margin-top: -10px;
-}
-.projeto-img img{
-    width: 100%;
-    height: 100%;
-    background-color: gray;
-}
-.projeto-mae{
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-}
-.main-footer{
-    /* width: 100%; */
-    min-height: 300px;
-    /* border: 1px solid red; */
-    background-color: black;
-    color: white;
-    padding-left: 50px;
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
+	 	#menu a{
+	 		max-height: 90%;
+	 		background-color: black;
+	 		color: white;
+	 		padding: 20px;
+	 		margin: 3px;
+	 	}
 
-}
-.footer-rg{
-    width: 30%;
-}
-.footer-sociais{
-    width: 30%;
-    display: flex; 
-    background-color: black;
-    float: right;
+	 	.msg-success{
+	 		background-color:green;
+	 		display: flex;
+	 		justify-content:center;
+	 		height: 50px;
+	 		align-items:center;
+	 		color: white;
+	 		margin-bottom: 30px;
+	 	}
 
-}
+	 	.msg-fail{
+	 		background-color:red;
+	 		display: flex;
+	 		justify-content:center;
+	 		height: 50px;
+	 		align-items:center;
+	 		color: white;
+	 		margin-bottom: 30px;
+	 	}
 
-.footer-img img{
-    width: 50px;
-    background-color: white;
-    border-radius:100px;
-}
-p{
-    font-size: 22px;
-}
+	 	#tumb, #tumb img{
+	 		max-width: 100%;
+	 	}
 
+	 	.botao-adm{
+	 		min-width: 400px;
+	 		max-width: 400px;
+	 		height: 50px;
+	 		background-color: grey;
+	 		color: white;
+	 		padding: 10px;
+	 		margin: 10px;
+	 		display: flex;
+	 		justify-content: center;
+	 		align-items: center;
+	 	}
 
-/* RESPONSIVO */
-@media (max-width: 576px)
- {
-#navegacao{
-    max-width: 100%;
-    height: 70px;
-    font-size: 12px;
+	 	.center{
+	 		justify-content: center;
+	 		align-items: center;
+	 		justify-content: center;
+	 		display: flex;
+	 	}
 
-    
-}
-#banner{
-    width: 100%;
-}
-#opcao{
-    margin-right: 0;
-    
-}
-#RG{
-    margin-left: 0;
-    justify-content: start;
-}
-#opcao a{
-    font-size: 13px;
-}
+	 	table, th, td, tr{
+/*	 		padding: 10px;*/
+	 		border-collapse: collapse;
+	 		border: 1px solid black;
+	 		text-align: center;
+	 	}
 
-h1{
-    font-size: 30px;
-}
-h3{
-    font-size: 20px;
-}
-.navegacao-esquerda{
-    display: none;
-}
+	 	table{
+	 		min-width: 600px;
+	 	}
 
-p{
-font-size: 17px;
-display: block;
-margin-bottom: 30px;
-margin-left: 30px;
-}
-.comecoesquerda{
-    display: flex;
-    flex-direction: column;
-    /* margin-left: 30px; */
+	 	.button-table{
+	 		display: block;
+	 		min-width: 100%;
+	 		width: 100px;
+	 		min-height: 100%;
+	 		height: 40px;
+	 		background-color: grey;
+	 		display: flex;
+	 		align-items: center;
+	 		justify-content: center;
+	 	}
 
+	 	.vermelho{
+	 		background-color: red;
+	 		color: white;
+	 	}
 
-}
-#comecodetudo{
-    width: 95%;
-    margin: auto;
-    
-}
-#minhaskils{
-    /* padding: 10px; */
-    min-width: 95%;
-    max-width: 95%;
-    margin: auto;
-}
-#habilidades{
-    /* float: none; */
-    width: 20px;
-    height: 50px;
-    float: left;
+	 	.azul{
+	 		background-color: blue;
+	 		color: white;
+	 	}
+	 	.roxo{
+	 		background-color: blueviolet;
+	 		color: white;
+	 	}
 
-}
-.projeto-resumo{
-    width: 100%;
-    margin: auto;
-    align-items: center;
-    text-align: center;
-    /* flex-direction: column; */
-}
-#meus-projetos{
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 200px;
-}
-.projeto-img{
-    width: 80%;
-    height: 150px;
-}
-.projeto-img img{
-    height: 200px;
-    position: relative;
-}
-.projeto-detalhes{
-    margin: auto;
-}
-.projeto-mae{
-    height: auto;
-    flex-direction: column;
-}
-.projeto-resumo{
-    margin-top: 10px;
-}
-.formulario{
-    width: 80%;
-    
-}
-.botao-enviar{
-    width: 100%;
-    /* margin-bottom: 30px; */
-}
-#banner{
-min-height: 750px;
-}
-.main-footer{
-    min-height: 300px;
-    justify-content: center;
-    flex-direction: column-reverse;
-    margin-top: 10px;
-    /* width: 100%; */
-}
-.footer-img{
-    margin-bottom: 15px;
-    /* width: 300px; */
-    justify-content:space-evenly;
-    
-}
-.footer-img img{
-    width: 40px;
-}
-.footer-rg{
-    /* width: 300px; */
-}
-.text-footer{
-    font-size: 14px;
-    /* width: 300px; */
-}
-.footer-sociais{
-    /* width: 300px; */
-}
-}
+	 	.verde{
+	 		background-color: green;
+	 		color: white;
+	 	}
+
+	 	.limite{
+	 		justify-content: space-evenly;
+	 		padding-top: 30px;
+	 		padding-bottom: 30px;
+	 		height: auto;
+/*	 		max-height: 600px;*/
+	 		overflow: auto;
+	 	}
+
+	 	.inicio{
+	 		display: flex;
+	 		justify-content: flex-start;
+	 		align-items: flex-start;
+	 	}
+
+	 	.disabled {
+		    background-color: rgba(128, 128, 128, 0.3);  /* Fundo cinza transparente */
+		    pointer-events: none;  /* Impede a interação (clicar) com a div */
+		}
+
+		.disabled-link {
+		    pointer-events: none;  /* Impede o clique nos links dentro da div */
+		    color: gray;  /* Opcional: Altera a cor do texto do link */
+		    cursor: not-allowed;  /* Cursor indicando que a ação é inválida */
+		}
+
+		.vencedor{
+			background-color: green;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+
+		}
+
+		.perdedor{
+			background-color: red;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+		}
+
+		.vencedor, .perdedor{
+			width: 120px;
+		}
+
+		.bloco-vitoria{
+			min-width: 400px;
+			color: white;
+			background-image: url('img-vitoria/akuma.jpg');
+			background-size: 100% 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		#chave-vitoria{
+			justify-content: center;
+			background-color: transparent;
+		}
+
+		#chave-vitoria .vencedor{
+			background-color: yellow;
+			color: black;
+			font-weight: bold;
+		}
+		
+
