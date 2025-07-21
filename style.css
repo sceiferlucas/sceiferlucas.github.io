@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: arial;
+}
+
+#header{
+	/*background-color: black;*/
+	position: relative;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	/*padding-top: 30px;*/
+	background-image: url('assets/img/banner.jpg'); /* Caminho da imagem */
+  	background-size: cover;       /* Faz a imagem cobrir toda a área */
+  	background-position: center;  /* Centraliza a imagem */
+  	background-repeat: no-repeat; /* Evita repetição */
+  	overflow: hidden;
+}
+
+#header::before{
+	content: "";
+	position: absolute;
+	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	background-color: rgba(0, 0, 0, 0.5); /* Ajuste aqui a intensidade */
+  	z-index: 1;
+}
+
+.conteudo {
+  position: relative;
+  z-index: 2; /* Garante que o texto fique acima do escurecimento */
+}
+
+#menu-topo{
+	background-color: white;
+	top: 0;
+	position: relative;
+	width: 100vw;
+	height: 40px;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	border-bottom: 1px solid #a4a4a4;
+	justify-content: space-around;
+}
+
+#cabecalho{
+  	position: fixed;
+  	height: 120px;
+  	width: 100vw;
+  	display: flex;
+  	align-items: center;justify-content: space-around;
+  	color: white;
+}
+
+#menu-inferior{
+	height: 60px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	background-color: #2c2a29;
+	justify-content: space-around;
+	color: white;
+}
+
+#cabecalho h5{
+  font-family: 'CALVIN', sans-serif;
+  color: yellow;
+	font-size: 25px;
+}
+.font-grande{
+	font-family: 'CALVIN', sans-serif;                                          
+	font-size: 40px;
+}
+
+.borda{
+	border: 1px solid yellow;
+}
+
+.porvolta{
+	justify-content: space-around;
+}
+
+.centralizar{
+	display: flex;
+	align-items: center;
+}
+
+.area-limite{
+	/*border: 1px solid red;*/
+	width: 80vw;
+	display: flex;
+
+}
+
+#menu{
+	background-color: transparent;
+}
+
+#menu a{
+	color: white;
+	font-weight: bold;
+}
+
+#cabecalho.scrolado{
+	background-color: black;
+}
+
+#header {
+  position: relative;
+  height: 100vh;
+  background-image: url('assets/img/banner1.fw.png');  /* substitua pelo caminho real */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Escurecimento da imagem */
+#header .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* ajuste a opacidade conforme necessário */
+  z-index: 1;
+}
+
+/* Menu fixo por cima da imagem */
+#cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+/* Inicialmente transparente */
+#cabecalho.transparent {
+  background-color: transparent;
+}
+
+/* Com fundo ao scrollar */
+#cabecalho.scrolado {
+  background-color: rgba(0, 0, 0, 0.85); /* ajuste a cor se quiser */
+}
+
+/* Garante que o conteúdo abaixo seja visível */
+.conteudo-abaixo {
+  height: 1500px; /* só pra testar o scroll */
+  background-color: #f5f5f5;
+  padding: 100px 20px;
+}
